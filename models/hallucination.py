@@ -4,7 +4,7 @@ import numpy as np
 import faiss
 
 # -----------------------------
-# Load LLM
+# Load GPT2 Model
 # -----------------------------
 generator = pipeline(
     "text-generation",
@@ -28,15 +28,25 @@ knowledge_base = [
     "Java is used for backend development.",
     "Mawsynram in India receives more rainfall than Seattle.",
     "The Earth revolves around the Sun.",
-    "Quicksort is often faster in practice because of cache efficiency."
+    "Quicksort is often faster in practice because of cache efficiency.",
+    "Penguins cannot fly.",
+    "Penguins are birds that cannot fly.",
+    "The Sun is a star.",
+    "The Sun is not a planet.",
+    "Machine learning is a subset of artificial intelligence.",
+    "Machine learning enables systems to learn from data.",
+    "Water boils at 100 degrees Celsius.",
+    "Python is a popular programming language.",
+    "Python is used for artificial intelligence and web development."
 ]
 
 # -----------------------------
 # Create Embeddings
 # -----------------------------
-kb_embeddings = embed_model.encode(knowledge_base)
+kb_embeddings = embed_model.encode(
+    knowledge_base
+)
 
-# Convert to float32
 kb_embeddings = np.array(
     kb_embeddings,
     dtype=np.float32
@@ -52,9 +62,9 @@ index = faiss.IndexFlatL2(dimension)
 index.add(kb_embeddings)
 
 # -----------------------------
-# Retrieve Using FAISS
+# Semantic Retrieval
 # -----------------------------
-def retrieve(query, top_k=3):
+def retrieve(query, top_k=1):
 
     query_embedding = embed_model.encode([query])
 
@@ -71,7 +81,10 @@ def retrieve(query, top_k=3):
     results = []
 
     for idx in indices[0]:
-        results.append(knowledge_base[idx])
+
+        results.append(
+            knowledge_base[idx]
+        )
 
     return results
 
@@ -84,8 +97,9 @@ def generate_answer(query):
 
     result = generator(
         prompt,
-        max_new_tokens=30,
-        do_sample=False
+        max_new_tokens=25,
+        do_sample=False,
+        temperature=0.1
     )
 
     answer = result[0]["generated_text"]
@@ -133,20 +147,23 @@ def confidence_score(answer, context):
 
     max_similarity = max(similarities)
 
-    return round(float(max_similarity), 3)
+    return round(
+        float(max_similarity),
+        3
+    )
 
 # -----------------------------
 # Severity Level
 # -----------------------------
 def severity_level(score):
 
-    if score >= 0.85:
+    if score >= 0.90:
         return "Low Hallucination Risk"
 
-    elif score >= 0.60:
+    elif score >= 0.70:
         return "Medium Hallucination Risk"
 
-    elif score >= 0.40:
+    elif score >= 0.50:
         return "High Hallucination Risk"
 
     else:
@@ -157,25 +174,28 @@ def severity_level(score):
 # -----------------------------
 def hallucination_guard(query):
 
-    # Step 1
+    # Step 1: Generate Answer
     answer = generate_answer(query)
 
-    # Step 2
+    # Step 2: Retrieve Context
     context = retrieve(query)
 
-    # Step 3
+    # Step 3: Confidence Scoring
     score = confidence_score(
         answer,
         context
     )
 
-    # Step 4
+    # Step 4: Severity Detection
     severity = severity_level(score)
 
-    # Step 5
-    if score < 0.75:
+    # Step 5: Smart Correction
+    if score < 0.90:
+
         final_answer = context[0]
+
     else:
+
         final_answer = answer
 
     return {
