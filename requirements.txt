@@ -1,0 +1,8 @@
+flask
+transformers
+torch
+sentence-transformers
+scikit-learn
+numpy
+matplotlib
+faiss-cpu

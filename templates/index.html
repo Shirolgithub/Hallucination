@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthShield-RAG</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>TruthShield-RAG</h1>
+    <h2>Multi-Layer Hallucination Detection Framework</h2>
+
+    <form method="POST">
+        <input type="text" name="query" placeholder="Enter your question here..." required>
+        <button type="submit">Check Hallucination</button>
+    </form>
+
+    {% if result %}
+    <div class="result-box">
+
+        <h3>LLM Answer</h3>
+        <p>{{ result.llm_answer }}</p>
+
+        <h3>Retrieved Context</h3>
+        <ul>
+            {% for item in result.context %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Confidence Score</h3>
+        <p>{{ result.confidence }}</p>
+
+        <h3>Severity Level</h3>
+        <p>{{ result.severity }}</p>
+
+        <h3 style="color: green;">Final Corrected Answer</h3>
+        <p><b>{{ result.final_answer }}</b></p>
+
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
