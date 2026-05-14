@@ -6,8 +6,11 @@ total = len(test_data)
 
 for item in test_data:
 
-    question = item["question"]
-    expected = item["expected"]
+    # Tuple format:
+    # ("question", "answer")
+
+    question = item[0]
+    expected = item[1]
 
     result = hallucination_guard(question)
 
@@ -17,11 +20,12 @@ for item in test_data:
     print("EXPECTED:", expected)
     print("PREDICTED:", predicted)
 
+    # Accuracy check
     if expected.lower() in predicted.lower():
         correct += 1
 
-accuracy = correct / total
+accuracy = (correct / total) * 100
 
 print("\n==========================")
-print("FINAL ACCURACY:", round(accuracy * 100, 2), "%")
+print("FINAL ACCURACY:", round(accuracy, 2), "%")
 print("==========================")

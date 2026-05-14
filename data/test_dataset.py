@@ -1,62 +1,113 @@
 test_data = [
 
-    {
-        "question": "What did CERN discover in 2012?",
-        "expected": "CERN discovered the Higgs boson in 2012."
-    },
+("What is photosynthesis?", "Photosynthesis is the process plants use to make food."),
+("What is Artificial Intelligence?", "Artificial Intelligence refers to machines performing human-like tasks."),
+("What is Java used for?", "Java is used for backend development."),
+("Which place receives more rainfall than Seattle?", "Mawsynram in India receives more rainfall than Seattle."),
+("Can penguins fly?", "Penguins cannot fly."),
+("Is the Sun a planet?", "The Sun is a star."),
+("What is machine learning?", "Machine learning is a subset of artificial intelligence."),
+("What does Python support?", "Python supports artificial intelligence and web development."),
+("What boils at 100 degrees Celsius?", "Water boils at 100 degrees Celsius."),
+("What revolves around the Sun?", "The Earth revolves around the Sun."),
 
-    {
-        "question": "What is photosynthesis?",
-        "expected": "Photosynthesis is the process plants use to make food."
-    },
+("What is FAISS?", "FAISS is a vector similarity search library."),
+("What is NLP?", "NLP stands for Natural Language Processing."),
+("What is deep learning?", "Deep learning is a subset of machine learning."),
+("What is a transformer model?", "A transformer model processes sequential data using attention mechanisms."),
+("What is GPT2?", "GPT2 is a transformer-based language model."),
+("What is RAG?", "RAG stands for Retrieval-Augmented Generation."),
+("What is hallucination in AI?", "Hallucination refers to factually incorrect AI-generated information."),
+("What is semantic search?", "Semantic search retrieves information based on meaning."),
+("What is Flask?", "Flask is a lightweight Python web framework."),
+("What is NumPy?", "NumPy is a numerical computing library for Python."),
 
-    {
-        "question": "What is Artificial Intelligence?",
-        "expected": "Artificial Intelligence refers to machines performing human-like tasks."
-    },
+("What is TensorFlow?", "TensorFlow is a machine learning framework."),
+("What is PyTorch?", "PyTorch is a deep learning framework."),
+("What is a chatbot?", "A chatbot is an AI system designed for conversation."),
+("What is OpenAI?", "OpenAI is an artificial intelligence research organization."),
+("What is an embedding?", "An embedding is a vector representation of data."),
+("What is cosine similarity?", "Cosine similarity measures similarity between vectors."),
+("What is FAISS used for?", "FAISS is used for efficient vector similarity search."),
+("What is backend development?", "Backend development handles server-side logic."),
+("What is frontend development?", "Frontend development focuses on user interfaces."),
+("What is cloud computing?", "Cloud computing provides computing services over the internet."),
 
-    {
-        "question": "What is Java used for?",
-        "expected": "Java is used for backend development."
-    },
+("What is cybersecurity?", "Cybersecurity protects systems and data from attacks."),
+("What is data science?", "Data science extracts insights from data."),
+("What is computer vision?", "Computer vision enables machines to interpret images."),
+("What is reinforcement learning?", "Reinforcement learning learns using rewards and penalties."),
+("What is supervised learning?", "Supervised learning uses labeled training data."),
+("What is unsupervised learning?", "Unsupervised learning finds patterns in unlabeled data."),
+("What is overfitting?", "Overfitting occurs when a model memorizes training data."),
+("What is underfitting?", "Underfitting occurs when a model fails to learn patterns."),
+("What is an API?", "An API enables communication between software systems."),
+("What is GitHub?", "GitHub is a platform for version control and collaboration."),
 
-    {
-        "question": "Which place receives more rainfall than Seattle?",
-        "expected": "Mawsynram in India receives more rainfall than Seattle."
-    },
+("What is Linux?", "Linux is an open-source operating system."),
+("What is Windows?", "Windows is an operating system developed by Microsoft."),
+("What is HTML?", "HTML is used to structure web pages."),
+("What is CSS?", "CSS is used for styling web pages."),
+("What is JavaScript?", "JavaScript adds interactivity to web pages."),
+("What is SQL?", "SQL is used to manage databases."),
+("What is a database?", "A database stores organized information."),
+("What is MongoDB?", "MongoDB is a NoSQL database."),
+("What is MySQL?", "MySQL is a relational database system."),
+("What is Docker?", "Docker is a containerization platform."),
 
-    {
-        "question": "Can penguins fly?",
-        "expected": "Penguins cannot fly."
-    },
+("What is Kubernetes?", "Kubernetes manages containerized applications."),
+("What is virtualization?", "Virtualization creates virtual computing environments."),
+("What is IoT?", "IoT stands for Internet of Things."),
+("What is blockchain?", "Blockchain is a decentralized digital ledger."),
+("What is cryptocurrency?", "Cryptocurrency is a digital currency."),
+("What is Bitcoin?", "Bitcoin is a decentralized cryptocurrency."),
+("What is Ethereum?", "Ethereum is a blockchain platform."),
+("What is data mining?", "Data mining extracts patterns from data."),
+("What is big data?", "Big data refers to extremely large datasets."),
+("What is edge computing?", "Edge computing processes data near the source."),
 
-    {
-        "question": "Is the Sun a planet?",
-        "expected": "The Sun is not a planet."
-    },
+("What is DevOps?", "DevOps combines software development and operations."),
+("What is automation?", "Automation performs tasks with minimal human intervention."),
+("What is robotics?", "Robotics involves designing intelligent machines."),
+("What is an operating system?", "An operating system manages computer hardware and software."),
+("What is RAM?", "RAM is temporary memory used by computers."),
+("What is ROM?", "ROM stores permanent system instructions."),
+("What is a CPU?", "CPU is the central processing unit."),
+("What is a GPU?", "GPU processes graphics and parallel computations."),
+("What is cache memory?", "Cache memory stores frequently used data."),
+("What is a compiler?", "A compiler converts source code into machine code."),
 
-    {
-        "question": "What is machine learning?",
-        "expected": "Machine learning enables systems to learn from data."
-    },
+("What is an interpreter?", "An interpreter executes code line by line."),
+("What is object-oriented programming?", "OOP organizes software using objects and classes."),
+("What is polymorphism?", "Polymorphism allows methods to behave differently."),
+("What is inheritance?", "Inheritance enables code reuse between classes."),
+("What is encapsulation?", "Encapsulation hides internal implementation details."),
+("What is abstraction?", "Abstraction simplifies complex systems."),
+("What is recursion?", "Recursion occurs when a function calls itself."),
+("What is an algorithm?", "An algorithm is a step-by-step problem-solving method."),
+("What is a data structure?", "A data structure organizes data efficiently."),
+("What is binary search?", "Binary search finds elements in sorted arrays."),
 
-    {
-        "question": "What does water boil at?",
-        "expected": "Water boils at 100 degrees Celsius."
-    },
+("What is linear search?", "Linear search checks elements sequentially."),
+("What is sorting?", "Sorting arranges data in a specific order."),
+("What is quicksort?", "Quicksort is a divide-and-conquer sorting algorithm."),
+("What is merge sort?", "Merge sort divides and merges arrays."),
+("What is a neural network?", "A neural network mimics the human brain."),
+("What is a dataset?", "A dataset is a collection of data."),
+("What is training data?", "Training data teaches machine learning models."),
+("What is testing data?", "Testing data evaluates model performance."),
+("What is accuracy?", "Accuracy measures correct predictions."),
+("What is precision?", "Precision measures positive prediction correctness."),
 
-    {
-        "question": "What is Python?",
-        "expected": "Python is a popular programming language."
-    },
+("What is recall?", "Recall measures detection of actual positives."),
+("What is F1 score?", "F1 score balances precision and recall."),
+("What is a confusion matrix?", "A confusion matrix evaluates classification performance."),
+("What is evaluation?", "Evaluation measures model effectiveness."),
+("What is bias in AI?", "Bias in AI causes unfair outcomes."),
+("What is ethical AI?", "Ethical AI ensures fairness and transparency."),
+("What is generative AI?", "Generative AI creates new content."),
+("What is ChatGPT?", "ChatGPT is a conversational AI model."),
+("What is prompt engineering?", "Prompt engineering designs effective AI prompts."),
+("What is semantic similarity?", "Semantic similarity measures meaning closeness.")
 
-    {
-        "question": "What does the Earth revolve around?",
-        "expected": "The Earth revolves around the Sun."
-    },
-
-    {
-        "question": "What is Quicksort known for?",
-        "expected": "Quicksort is often faster in practice because of cache efficiency."
-    }
 ]
