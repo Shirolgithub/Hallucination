@@ -1,0 +1,110 @@
+CERN discovered the Higgs boson in 2012.
+Photosynthesis is the process plants use to make food.
+Artificial Intelligence refers to machines performing human-like tasks.
+Java is used for backend development.
+Mawsynram in India receives more rainfall than Seattle.
+The Earth revolves around the Sun.
+Quicksort is often faster in practice because of cache efficiency.
+Penguins cannot fly.
+Penguins are birds that cannot fly.
+The Sun is a star.
+The Sun is not a planet.
+Machine learning is a subset of artificial intelligence.
+Machine learning enables systems to learn from data.
+Water boils at 100 degrees Celsius.
+Python is a popular programming language.
+Python is used for artificial intelligence and web development.
+FAISS is a vector similarity search library.
+RAG stands for Retrieval-Augmented Generation.
+Hallucination refers to factually incorrect AI-generated information.
+Semantic similarity measures meaning closeness.
+Flask is a lightweight Python web framework.
+NLP stands for Natural Language Processing.
+Deep learning is a subset of machine learning.
+Docker is a containerization platform.
+TensorFlow is a machine learning framework.
+PyTorch is a deep learning framework.
+Cloud computing provides computing services over the internet.
+Cybersecurity protects systems and data from attacks.
+Data science extracts insights from data.
+Computer vision enables machines to interpret images.
+Reinforcement learning learns using rewards and penalties.
+Supervised learning uses labeled training data.
+Unsupervised learning finds patterns in unlabeled data.
+Overfitting occurs when a model memorizes training data.
+Underfitting occurs when a model fails to learn patterns.
+GitHub is a platform for version control and collaboration.
+Linux is an open-source operating system.
+Windows is an operating system developed by Microsoft.
+HTML is used to structure web pages.
+CSS is used for styling web pages.
+JavaScript adds interactivity to web pages.
+SQL is used to manage databases.
+MongoDB is a NoSQL database.
+MySQL is a relational database system.
+Kubernetes manages containerized applications.
+Virtualization creates virtual computing environments.
+IoT stands for Internet of Things.
+Blockchain is a decentralized digital ledger.
+Cryptocurrency is a digital currency.
+Bitcoin is a decentralized cryptocurrency.
+Ethereum is a blockchain platform.
+Big data refers to extremely large datasets.
+Edge computing processes data near the source.
+DevOps combines software development and operations.
+Automation performs tasks with minimal human intervention.
+Robotics involves designing intelligent machines.
+RAM is temporary memory used by computers.
+ROM stores permanent system instructions.
+CPU is the central processing unit.
+GPU processes graphics and parallel computations.
+Cache memory stores frequently used data.
+A compiler converts source code into machine code.
+An interpreter executes code line by line.
+Polymorphism allows methods to behave differently.
+Inheritance enables code reuse between classes.
+Encapsulation hides internal implementation details.
+Abstraction simplifies complex systems.
+Recursion occurs when a function calls itself.
+An algorithm is a step-by-step problem-solving method.
+Binary search finds elements in sorted arrays.
+Linear search checks elements sequentially.
+Sorting arranges data in a specific order.
+Merge sort divides and merges arrays.
+A neural network mimics the human brain.
+A dataset is a collection of data.
+Training data teaches machine learning models.
+Testing data evaluates model performance.
+Accuracy measures correct predictions.
+Precision measures positive prediction correctness.
+Recall measures detection of actual positives.
+F1 score balances precision and recall.
+Evaluation measures model effectiveness.
+Ethical AI ensures fairness and transparency.
+Generative AI creates new content.
+ChatGPT is a conversational AI model.
+Prompt engineering designs effective AI prompts.
+An embedding is a vector representation of data.
+Cosine similarity measures similarity between vectors.
+Backend development handles server-side logic.
+Frontend development focuses on user interfaces.
+An API enables communication between software systems.
+Data mining extracts patterns from data.
+Object-oriented programming organizes software using objects and classes.
+A database stores organized information.
+Semantic search retrieves information based on meaning.
+A transformer model processes sequential data using attention mechanisms.
+GPT2 is a transformer-based language model.
+OpenAI is an artificial intelligence research organization.
+Bias in AI causes unfair outcomes.
+Explainable AI improves transparency in AI systems.
+A chatbot is an AI system designed for conversation.
+FAISS is used for efficient vector similarity search.
+Semantic retrieval searches based on meaning.
+Vector search retrieves similar embeddings.
+Retrieval augmentation improves factual grounding.
+A hallucinated response contains incorrect generated information.
+Model evaluation measures AI system performance.
+AI transparency improves interpretability and trust.
+Factual grounding aligns outputs with verified information.
+Response correction replaces hallucinated outputs with factual responses.
